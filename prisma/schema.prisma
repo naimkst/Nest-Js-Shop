@@ -24,7 +24,7 @@ model Product {
   title     String
   description   String?
   published Boolean? @default(false)
-  price Int?
+  price String?
   image String?
   userId  Int
   author   User @relation(fields: [userId], references: [id])

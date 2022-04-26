@@ -10,8 +10,8 @@ export class CreateProductDto {
   @IsString()
   description: string;
 
-  @IsNumber()
-  price: number;
+  @IsString()
+  price: string;
 
   @IsString()
   image: string;
@@ -19,6 +19,5 @@ export class CreateProductDto {
   @IsBoolean()
   published: boolean;
 
-  @IsNumber()
   userId: number;
 }
